@@ -32,6 +32,7 @@ input[type="text"] {
   <?php 
   session_start();        
   if(isset($_POST['username']) && isset($_POST['level'])){
+    $nameButton='guess';
   $_SESSION['username']=$_POST['username'];
   $_SESSION['level']=$_POST['level'];
   $_SESSION['message']="";
